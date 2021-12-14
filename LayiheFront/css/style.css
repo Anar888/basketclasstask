@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+   margin: 0;
+}
+
+.logo{
+    display: inline-block;
+}
+
+nav{
+    margin-top: 34px;
+}
+.navitems{
+display: inline-block;
+position: relative;
+left: 50px;
+}
+.navitems>ul{
+    /* display: flex; */
+    /* flex-direction: row; */
+}
+.navitems>ul>li{
+list-style: none;
+padding: 0 10px;
+display: inline-block;
+}
+.navitems>ul>li>a{
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    color: #6F8BA4;
+    
+}
+.navitems>ul>li>a>i{
+    padding-left: 3px;
+}
+
+.dropdowns{
+    position: absolute;
+    top: 35px;
+    left: 80px;
+    background-color: brown;
+    padding:0 30px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    overflow: hidden;
+    
+    transition: all 0.3s ease-in-out 0s,visibility 0s linear 0.5s, z-index 0s linear 0.01s;
+    
+}
+
+.dropdowns>li{
+
+list-style: none;
+
+}
+.dropdowns>li>a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    line-height: 5px;
+    
+ 
+}
+.nav1:hover .dropdowns{
+   
+    opacity: 1;
+    visibility: visible;
+    background-color: brown;
+}
+.nav2:hover .dropdowns2{
+   
+    opacity: 1;
+    visibility: visible;
+    background-color: brown;
+}
+.dropdowns2>li>a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    line-height: 5px;
+    
+ 
+}
+.dropdowns2>li{
+    
+    list-style: none;
+    
+    }
+    .dropdowns2{
+        position: absolute;
+        top: 35px;
+        left: 180px;
+        background-color: brown;
+        padding:0 50px 0px 20px;
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+        overflow: hidden;
+        
+        transition: all 0.3s ease-in-out 0s,visibility 0s linear 0.5s, z-index 0s linear 0.01s;
+        
+    }
+    .navbuttons{
+        display:inline-block;
+        position: absolute;
+        right: 0px;
+  
+    }
+    .navbuttons>.but1,  .navbuttons>.but2{
+        display: inline-block;
+        
+    }
