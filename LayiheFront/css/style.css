@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
    margin: 0;
+
 }
 
 .logo{
@@ -40,14 +41,14 @@ display: inline-block;
     position: absolute;
     top: 35px;
     left: 80px;
-    background-color: brown;
+    
     padding:0 30px;
     opacity: 0;
-    visibility: hidden;
+   visibility: hidden;
     z-index: -1;
     overflow: hidden;
-    
-    transition: all 0.3s ease-in-out 0s,visibility 0s linear 0.5s, z-index 0s linear 0.01s;
+    transform: translateY(-10px);
+    transition: all 0.5s ease-in-out 0s,visibility 0s linear 0.5s, z-index 0s linear 0.01s;
     
 }
 
@@ -60,7 +61,7 @@ list-style: none;
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
-    color: white;
+    color: black;
     line-height: 5px;
     
  
@@ -69,19 +70,21 @@ list-style: none;
    
     opacity: 1;
     visibility: visible;
-    background-color: brown;
+    transform: translateY(10px);
+   
+    background-color: #fff;
 }
 .nav2:hover .dropdowns2{
    
     opacity: 1;
     visibility: visible;
-    background-color: brown;
+    background-color: #fff;
 }
 .dropdowns2>li>a{
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
-    color: white;
+    color: black;
     line-height: 5px;
     
  
@@ -95,7 +98,7 @@ list-style: none;
         position: absolute;
         top: 35px;
         left: 180px;
-        background-color: brown;
+        background-color: #fff;
         padding:0 50px 0px 20px;
         opacity: 0;
         visibility: hidden;
@@ -109,9 +112,102 @@ list-style: none;
         display:inline-block;
         position: absolute;
         right: 0px;
+      
   
     }
     .navbuttons>.but1,  .navbuttons>.but2{
         display: inline-block;
         
     }
+    .navbuttons>.but1>a{
+        text-decoration: none;
+        text-align: center;
+        color: #585CE9;
+    }
+    .navbuttons>.but2>a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .navbuttons>.but1{
+
+        border: 1px solid #585CE9;
+        width: 100px;
+        height: 32px;
+        border-radius: 5px;
+        line-height: 31px;
+        letter-spacing: 0.5px;
+        background: none;
+        color: #585CE9;
+        position: relative;
+        overflow: hidden;
+        padding-left: 25px;
+        font-weight: 700;
+        font-size: 12px;
+        }
+        .navbuttons>.but2{
+        border: 1px solid #585CE9;
+        width: 100px;
+        height: 32px;
+        border-radius: 5px;
+        line-height: 31px;
+        letter-spacing: 0.5px;
+        background: #585CE9;
+        color: #585CE9;
+        position: relative;
+        overflow: hidden;
+        padding-left: 25px;
+        font-weight: 700;
+        font-size: 12px;
+        }
+        .but1:hover {
+            background-color: #585CE9;
+           
+        }
+        .but1:hover a{
+            color: #fff;
+        }
+        .head1{
+            padding-top: 200px;
+        }
+        .head1>h2{
+            line-height: 50px;
+        }
+        .head1>h2>span{
+            color: #585CE9;
+        }
+        .head1>p{
+            line-height: 30px;
+            padding-bottom: 20px;
+        }
+        .btnhead{
+            margin-top: 20px;
+            border-radius: 5px;
+            width: 160px;
+            margin: auto;
+            display: inline-block;
+            padding: 12px;
+            text-align: center;
+            border: none;
+            background-color:#585CE9 ;
+            font-weight: 700;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        .divimg1{
+            padding-top: 100px;
+            display: flex;
+            flex-direction: row;
+        }
+        .btnhead>a{
+            text-decoration: none;
+            color: #fff;
+            letter-spacing: 0.75px;
+            text-transform: uppercase;
+        }
+        .headimg1>img{
+            width: 200px;
+            height: 333px;
+        }
+        .headimg2>img{
+            width: 200px;
+        }
